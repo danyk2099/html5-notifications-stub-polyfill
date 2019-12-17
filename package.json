@@ -18,7 +18,6 @@
   },
   "homepage": "https://github.com/danyk2099/html5-notifications-stub-polyfill#readme",
   "dependencies": {
-    "parcel-bundler": "^1.12.4",
     "typescript": "^3.7.3"
   }
 }
