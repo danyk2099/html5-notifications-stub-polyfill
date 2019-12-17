@@ -1,7 +1,7 @@
 {
   "name": "html5-notifications-stub-polyfill",
   "version": "1.0.0",
-  "description": "none currently",
+  "description": "A polyfill for browsers that don't support the desktop Notifications constructor, which doesn't do a thing other than prevent errors",
   "main": "index.js",
   "scripts": {
     "bundle": "parcel ./src/",
@@ -11,7 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/danyk2099/html5-notifications-stub-polyfill.git"
   },
-  "author": "",
+  "author": "Daniel Kopel",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/danyk2099/html5-notifications-stub-polyfill/issues"
