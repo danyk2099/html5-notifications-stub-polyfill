@@ -1,21 +1,35 @@
-export class NotificationPolyfill {
+declare global {
+    interface Window { Notification: any; }
+}
+
+export interface IOptions {
+    actions: any;
+    body: any;
+    dir: any;
+    lang: any;
+    tag: any;
+    icon: any;
+    image: any;
+}
+
+export class NotificationPolyfill {    
     static permission: 'granted' | 'denied' | 'default' = 'default';
     static maxActions: number = 10;
 
-    public actions;
-    public badge;
-    public body;
-    public data;
-    public dir;
-    public lang;
-    public tag;
-    public icon;
-    public image;
-    public renotify;
-    public requireInteraction;
-    public silent;
-    public timestamp;
-    public vibrate;
+    public actions: any;
+    public badge: any;
+    public body: any;
+    public data: any;
+    public dir: any;
+    public lang: any;
+    public tag: any;
+    public icon: any;
+    public image: any;
+    public renotify: any;
+    public requireInteraction: any;
+    public silent: any;
+    public timestamp: any;
+    public vibrate: any;
 
     static requestPermission = function() {
         switch (localStorage.allowNotifications) {
@@ -31,7 +45,7 @@ export class NotificationPolyfill {
         }
     };
 
-    constructor(public title, public options) {
+    constructor(public title: string, public options: IOptions) {
         this.actions = options.actions;
         this.body = options.body;
         this.dir = options.dir;
