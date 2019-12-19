@@ -1,6 +1,6 @@
 {
   "name": "html5-notifications-stub-polyfill",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A polyfill for browsers that don't support the desktop Notifications constructor, which doesn't do a thing other than prevent errors",
   "main": "index.js",
   "scripts": {
