@@ -17,7 +17,8 @@
     "url": "https://github.com/danyk2099/html5-notifications-stub-polyfill/issues"
   },
   "homepage": "https://github.com/danyk2099/html5-notifications-stub-polyfill#readme",
-  "dependencies": {
+  "devDependencies": {
+    "@types/node": "^12.12.21",
     "typescript": "^3.7.3"
   }
 }

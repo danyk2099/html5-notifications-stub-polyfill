@@ -12,7 +12,7 @@ export interface IOptions {
     image: any;
 }
 
-export class NotificationPolyfill {    
+class NotificationPolyfill {
     static permission: 'granted' | 'denied' | 'default' = 'default';
     static maxActions: number = 10;
 
@@ -62,6 +62,10 @@ export class NotificationPolyfill {
     public close() {}
 }
 
-if (!window.Notification) {
-    window.Notification = NotificationPolyfill;
+function checkIfNotificationsSupported() {
+    if (!window.Notification) {
+        window.Notification = NotificationPolyfill;
+    }
 }
+
+module.exports = checkIfNotificationsSupported;

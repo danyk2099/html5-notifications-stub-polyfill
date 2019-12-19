@@ -1,3 +1,6 @@
-const NotificationsPolyfill = require('./dist/NotificationsPolyfill');
+module.exports = {
+    checkIfNotificationsSupported: require('./dist/NotificationPolyfill')
+};
 
-module.exports.NotificationsPolyfill = NotificationsPolyfill;
+
+
